@@ -1,0 +1,119 @@
+.syntax--js {
+
+  .syntax--constant {
+
+    &.syntax--other {
+
+      &.syntax--object {
+
+        &.syntax--key {
+          color: @syntax-text-color;
+          font-weight: bold;
+
+          .syntax--string {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  .syntax--entity {
+
+    &.syntax--name {
+
+      &.syntax--class {
+        text-decoration: underline;
+      }
+
+      &.syntax--function {
+        color: @syntax-function-color;
+      }
+
+      &.syntax--type {
+
+        &.syntax--object {
+          color: @syntax-reserved-color;
+        }
+      }
+    }
+  }
+
+  .syntax--keyword {
+
+    &.syntax--control {
+      color: @black;
+
+      &.syntax--flow {
+        color: @syntax-variable-color;
+      }
+
+      &.syntax--module {
+        color: @green;
+      }
+    }
+
+    &.syntax--operator {
+      color: @black;
+    }
+  }
+
+  .syntax--meta {
+
+    &.syntax--class {
+
+      &.syntax--extends {
+
+        // Imported and previously declared classNames
+        & + .syntax--entity.syntax--name.syntax--class {
+          color: @green;
+        }
+      }
+    }
+
+    &.syntax--brace,
+    &.syntax--delimiter {
+      color: @black;
+    }
+
+    &.syntax--function {
+
+      &.syntax--parameters {
+        color: @red;
+      }
+    }
+  }
+
+  &.syntax--storage {
+
+    &.syntax--type {
+
+      &.syntax--function {
+        color: @syntax-function-color;
+      }
+    }
+  }
+
+  .syntax--support {
+    color: @syntax-reserved-color;
+  }
+
+  .syntax--variable {
+
+    &.syntax--other {
+
+      &.syntax--class {
+        color: @green;
+        text-decoration: underline;
+      }
+
+      &.syntax--constant {
+        color: @syntax-constant-color;
+      }
+    }
+
+    &.syntax--language {
+      color: @syntax-reserved-color;
+    }
+  }
+}

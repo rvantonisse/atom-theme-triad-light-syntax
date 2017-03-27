@@ -1,0 +1,12 @@
+{
+  "name": "triad-light-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "author": "RV Antonisse",
+  "description": "Syntax in a triad color scheme, using primary, secondary and tertiary colors in a hierarchical way.",
+  "repository": "https://github.com/rvantonisse/atom-theme-triad-light-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.13.0"
+  }
+}

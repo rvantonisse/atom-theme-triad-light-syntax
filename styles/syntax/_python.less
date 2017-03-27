@@ -1,0 +1,149 @@
+.syntax--python {
+
+  .syntax--comment {
+
+    .syntax--keyword {
+      color: inherit;
+    }
+
+    .syntax--punctuation {
+
+      &.syntax--definition {
+        color: inherit;
+      }
+    }
+
+    .syntax--storage {
+      color: inherit;
+    }
+  }
+
+  .syntax--constant {
+
+    &.syntax--language {
+      color: @syntax-constant-color;
+    }
+
+    &.syntax--other {
+
+      &.syntax--placeholder {
+        color: @green;
+      }
+    }
+  }
+
+  .syntax--entity {
+
+    &.syntax--name {
+
+      &.syntax--function {
+        color: @syntax-function-color;
+      }
+
+      &.syntax--type {
+
+        &.syntax--class {
+          border-bottom: solid 1px currentColor;
+          color: @green;
+        }
+      }
+    }
+  }
+
+  .syntax--keyword {
+
+    &.syntax--control {
+
+      &.syntax--import {
+        color: @green;
+      }
+
+      &.syntax--conditional,
+      &.syntax--exception,
+      &.syntax--repeat,
+      &.syntax--statement {
+        color: @syntax-text-color;
+        font-weight: bold;
+      }
+    }
+
+    &.syntax--operator {
+
+      &.syntax--arithmetic,
+      &.syntax--assignment,
+      &.syntax--comparison,
+      &.syntax--logical {
+        color: @syntax-text-color;
+        font-weight: bold;
+      }
+    }
+
+    &.syntax--other {
+      color: @black;
+    }
+  }
+
+  .syntax--meta {
+
+    &.syntax--function-call {
+      color: @syntax-function-color;
+
+      & > .syntax--arguments,
+      & > .syntax--punctuation {
+        color: @syntax-text-color;
+      }
+    }
+
+    &.syntax--structure {
+
+      &.syntax--dictionary {
+
+        &.syntax--key {
+          color: @syntax-text-color;
+          font-weight: bold;
+
+          .syntax--string {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  .syntax--punctuation {
+
+    &.syntax--definition {
+      color: @black;
+      font-weight: bold;
+    }
+  }
+
+  .syntax--string {
+
+    &.syntax--quoted {
+
+      &.syntax--block {
+        color: @syntax-invisible-character-color;
+
+        .syntax--punctuation {
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  .syntax--support {
+
+    &.syntax--function,
+    &.syntax--type {
+      color: @syntax-reserved-color;
+    }
+  }
+
+  .syntax--variable {
+
+    &.syntax--parameter {
+      color: @red;
+    }
+  }
+}
