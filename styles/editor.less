@@ -8,7 +8,6 @@ atom-text-editor {
     background-color: @syntax-gutter-background-color;
 
     .line-number {
-
       &.cursor-line {
         background-color: @syntax-gutter-background-color-selected;
       }
@@ -56,7 +55,7 @@ atom-text-editor {
   .fold-marker::after {
     position: relative;
     z-index: 1;
-    content: "...";
+    content: "[Folded contents]";
     font-family: inherit;
     font-size: 1em;
     cursor: cell;
