@@ -78,14 +78,11 @@ atom-text-editor {
   .fold-marker::after {
     position: relative;
     z-index: 1;
+    color: @syntax-invisible-character-color;
     content: "[Folded contents…]";
     font-family: inherit;
     font-size: 1em;
     cursor: cell;
-  }
-
-  .fold-marker::after {
-    color: @syntax-invisible-character-color;
   }
 
   .bracket-matcher .region {
