@@ -12,6 +12,8 @@ atom-text-editor {
     background-color: @syntax-gutter-background-color;
 
     .line-number {
+      max-height: 1.5em;
+
       &.cursor-line {
         background-color: @syntax-gutter-background-color-selected;
       }
@@ -23,7 +25,6 @@ atom-text-editor {
       }
 
       &.folded {
-        padding-bottom: -3px;
         border-bottom: double 3px @syntax-gutter-border-color;
       }
 
