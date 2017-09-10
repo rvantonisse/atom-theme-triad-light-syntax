@@ -15,6 +15,17 @@ atom-text-editor {
       &.cursor-line {
         background-color: @syntax-gutter-background-color-selected;
       }
+
+      &.foldable {
+        .icon-right {
+          cursor: pointer;
+        }
+      }
+
+      &.folded {
+        padding-bottom: -3px;
+        border-bottom: double 3px @syntax-gutter-border-color;
+      }
     }
   }
 
@@ -65,8 +76,7 @@ atom-text-editor {
     cursor: cell;
   }
 
-  .fold-marker::after,
-  .gutter .line-number.folded {
+  .fold-marker::after {
     color: @syntax-invisible-character-color;
   }
 
