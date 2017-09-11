@@ -11,9 +11,14 @@ atom-text-editor {
   .gutter {
     color: @syntax-gutter-text-color;
 
+    &.line-numbers {
+      .line-number {
+        max-height: 1.5em;
+      }
+    }
+
     .line-number {
       opacity: 1;
-      max-height: 1.5em;
 
       &.cursor-line {
         background-color: @syntax-gutter-background-color-selected;
